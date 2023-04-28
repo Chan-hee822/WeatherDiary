@@ -65,7 +65,9 @@ public class DiaryService {
 		nowDiary.setText(text);
 		diaryRepository.save(nowDiary);
 	}
-
+	public void deleteDiary(LocalDate date) {
+		diaryRepository.deleteAllByDate(date);
+	}
 	private String getWeatherString() {
 		String apiUrl =
 				"https://api.openweathermap.org/data/2.5/weather?q=incheon&appid="
