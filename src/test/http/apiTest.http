@@ -1,5 +1,5 @@
 ### api test
-POST http://localhost:8080/create/diary?date=2022-03-03
+POST http://localhost:8080/create/diary?date=2022-06-01
 Content-Type: application/json
 
 {
